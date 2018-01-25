@@ -11,7 +11,7 @@
 	define('SLACK_API_URL', 'https://slack.com/api/channels.join');
 	define('SLACK_API_INVITE_URL', 'https://slack.com/api/channels.invite');
 	define('SLACK_API_USER_IDENTITY_URL', 'https://slack.com/api/users.identity');
-	define('SLACK_API_USER_TOKEN', '<Replace with your #Slack token>');
+	define('SLACK_API_USER_TOKEN', 'xoxp-290091752789-290004224356-304464397186-784c04887f0d99c30930960d7d85cf33');
 
 	$channelName = $_POST['channelName'];
 	$invitedUsers = isset($_POST['invitedUsers'])?json_decode($_POST['invitedUsers'], true):[];

@@ -10,19 +10,19 @@
 	var methods = {
 		init: function (options) {
 			this._defaults = {
-        apiToken: '',		//#Slack token
-        channelId: '',		//#Slack channel ID
-        user: '',			//name of the user
+        apiToken: 'xoxp-290091752789-290004224356-303994067329-c9439680a66cd89f38f70599e431f440',		//#Slack token
+        channelId: 'C8XSSMB9P',		//#Slack channel ID
+        user: 'guest',			//name of the user
         userLink: '', 		//link to the user in the application - shown in #Slack
         userImg: '',		//image of the user
         userId: '',			//id of the user in the application
         defaultSysImg: '',			//image to show when the support team replies
-	      defaultSysUser: '',
+	defaultSysUser: 'Megalodon',
         queryInterval: 3000,
         chatBoxHeader: "Need help? Talk to our support team right here",
         slackColor: "#36a64f",
         messageFetchCount: 100,
-        botUser: '',		//username to post to #Slack
+        botUser: 'ChatSupport',		//username to post to #Slack
         sendOnEnter: true,
         disableIfAway: false,
         elementToDisable: null,
@@ -421,7 +421,7 @@
 
 			return unescape(formattedText)
 			// <URL>
-			.replace(/<(.+?)(\|(.*?))?>/g, function(match, url, _text, text) {
+			.replace(/<(.+?)(\|(.*?))?>/g, function(match, url, text, text) {
 				if (!text) text = url;
 				return $('<a>')
 				.attr({
